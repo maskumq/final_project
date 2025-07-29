@@ -1,0 +1,234 @@
+/* Загальний стиль body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8d7d7; /* Колір фону */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Стиль для шапки (header) */
+header {
+  background-image:linear-gradient(red, white);
+ 
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header-buttons {
+  margin-top: 10px;
+}
+.header-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff8f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.header-buttons button:hover {
+  background-color: #e2c6b0;
+  background-repeat: no-repeat;
+}
+
+/* Основний контент */
+main {
+  position: relative;
+  flex: 1;
+  padding: 20px;
+}
+
+.info{
+    position: relative;
+    width: 100%;
+    height: 528px;
+    left: 0px;
+    top: 50px;
+}
+.info-img{
+    position: absolute;
+    width: 30%;
+    left: 65%;
+    border-radius: 50px;
+}
+.info-div{
+    position: absolute;
+    left: 5%;
+    width: 50%;
+}
+.info-div h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 75px;
+    color: #550000;
+}
+.info-div p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #550000;
+    width: 90%;
+}
+.info-butt{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.call-butt{
+    background: #FF9368;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #CBE4EA;
+    padding: 3% 10%;
+    margin: 5% 5% 5% 0%;
+    border-radius: 15px;
+}
+.call-butt:hover{
+    background: #CBE4EA;
+    color: #FF9368;
+    border: 1px solid #FF9368;
+    transition: 0.2s ease-out;
+}
+.menu-butt{
+   background: #CBE4EA;
+    border: 1px solid #FFC700;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FF9368;
+    padding: 3% 10%;
+    margin: 5% 5% 5% 0%;
+    border-radius: 15px;
+   
+}
+.menu-butt:hover{
+    background: #FF9368;
+    color: #CBE4EA;
+    transition: 0.2s ease-out;
+}
+/* Заголовки секцій */
+h2 {
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* Стиль для секції магазину */
+
+
+/* Каталог */
+.section-catalog {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top:0;
+}
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.catalog-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  width: calc(33% - 30px);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  box-shadow: 3px 3px green;
+}
+.catalog-item img {
+  width: 125px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.catalog-item p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.but-me{
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 5px;
+  color: white;
+  background-color: red;
+  border-radius: 30px;
+}
+
+.but-me:hover{
+  background-color: green;
+  
+}
+
+/* Відгуки */
+.section-feedback {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-bottom: 3px dooted #550000;
+}
+.feedback p {
+  margin: 8px 0;
+  font-style: italic;
+}
+
+/* Де нас знайти */
+.section-where {
+  margin-top: 30px;
+  text-align: center;
+}
+.address {
+  margin-top: 10px;
+}
+.address p {
+  margin: 6px 0;
+}
+/* Фото карти або зображення */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.image-container img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Підвал (footer) */
+footer {
+  background-color: #999;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
