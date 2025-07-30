@@ -56,23 +56,23 @@ main {
   padding: 20px;
 }
 
-.info{
-    position: relative;
-    width: 100%;
-    height: 528px;
-    left: 0px;
-    top: 50px;
+.info {
+  display: flex;
+  justify-content: center; /* по горизонталі */
+  align-items: center;     /* по вертикалі */
+  flex-wrap: wrap;         /* щоб елементи переносилися, якщо потрібно */
+  height: 528px;           /* висота секції */
 }
-.info-img{
-    position: absolute;
-    width: 30%;
-    left: 65%;
-    border-radius: 50px;
+.info-div {
+  flex: 1;                 /* займе половину разом з зображенням */
+  max-width: 50%;
+  padding: 10px;
 }
-.info-div{
-    position: absolute;
-    left: 5%;
-    width: 50%;
+.info-img {
+  width: 30%;
+  border-radius: 50px;
+  max-width: 100%;         /* щоб не виходило за межі */
+}
 }
 .info-div h1{
     font-style: normal;
