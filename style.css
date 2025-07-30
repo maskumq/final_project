@@ -1,321 +1,245 @@
-/* Загальний стиль body */
+/* Загальні стилі */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0f4f8;  /* Колір фону */
-  
-
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4e3; /* світло-кремовий фон */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Стиль для шапки (header) */
+/* Хедер */
 header {
-  background-image:linear-gradient(rgba(241, 56, 56, 0.726), rgb(86, 210, 214));
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  
+    background-color: #d35400; /* теплий оранжево-коричневий кольори */
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
 header h1 {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 46px;
-  font-weight: bold;
-  color: #45c3e2; /* Вибраний колір, можете змінити */
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2); /* Тінь тексту */
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); /* Тінь навколо тексту або блока */
-  padding: 5px 10px; /* Додатковий відступ для кращого вигляду */
-  display: inline-block; /* Щоб box-shadow був видимий по всьому блоку */
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
-  display: inline-block;
-  margin: 5px 10px;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #333; /* початковий колір */
-  font-weight: bold;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Стиль для посилань при наведенні */
 nav a:hover {
-  color: #fff; /* колір тексту при наведенні */
-  background-color: #e63c37; /* фон при наведенні */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* тінь для ефекту */
-  transform: translateY(-3px) scale(1.05); /* підйом і збільшення */
+    background-color: #e67e22;
+    transform: scale(1.05);
 }
 
 /* Основний контент */
 main {
-  position: relative;
-  padding: 20px;
+    padding: 40px 20px;
 }
 
+/* Блок "Трохи про нас" */
 .info {
-  position: relative;
-  display: flex;
-  justify-content: center; /* по горизонталі */
-  align-items: center;     /* по вертикалі */
-  flex-wrap: wrap;         /* щоб елементи переносилися, якщо потрібно */
-}
-.info-div {
-  flex: 1;                 /* займе половину разом з зображенням */
-  max-width: 50%;
-  padding: 10px;
-}
-.info-img {
-  width: 30%;
-  border-radius: 50px;
-  max-width: 100%;         /* щоб не виходило за межі */
-}
-.info-div h1{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 75px;
-    color: #550000;
-}
-.info-div p{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
-    color: #550000;
-    width: 90%;
-}
-.info-butt{
-    width: 70%;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
 }
-.call-butt{
-    background: #FF9368;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
+
+.info-div {
+    flex: 1;
+    max-width: 600px;
+}
+
+#main {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #c0392b; /* темно-красний для заголовка */
+}
+
+.info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.info-butt {
+    margin-top: 20px;
+}
+
+.call-butt {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c0392b;
+    color: #fff;
     text-decoration: none;
-    color: #CBE4EA;
-    padding: 3% 10%;
-    margin: 5% 5% 5% 0%;
-    border-radius: 15px;
-}
-.call-butt:hover{
-    background: #CBE4EA;
-    color: #FF9368;
-    border: 1px solid #FF9368;
-    transition: 0.2s ease-out;
-}
-.menu-butt{
-   background: #CBE4EA;
-    border: 1px solid #FFC700;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    text-decoration: none;
-    color: #FF9368;
-    padding: 3% 10%;
-    margin: 5% 5% 5% 0%;
-    border-radius: 15px;
-   
-}
-.menu-butt:hover{
-    background: #FF9368;
-    color: #CBE4EA;
-    transition: 0.2s ease-out;
-}
-/* Заголовки секцій */
-h2 {
-  margin: 10px 0;
-  font-weight: bold;
-  text-align: center;
-  font-size: 22px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Стиль для секції магазину */
+.call-butt:hover {
+    background-color: #e74c3c;
+    transform: translateY(-2px);
+}
 
+/* Зображення */
+.info-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
-/* Каталог */
+/* Каталог меню */
 .section-catalog {
-  position: relative;
-  width: 100%;
-  padding: 20px; /* додавання внутрішнього відступу для комфорту */
-  box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 30px;
 }
 
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .catalog-item {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  width: calc(33.333% - 30px); /* трохи точніше для трьох колонок */
-  max-width: 300px; /* обмеження ширини для великого екрану */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* додано плавний перехід */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .catalog-item:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  transform: translateY(-2px); /* підняти при наведенні для ефекту */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .catalog-item img {
-  width: 125px;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  object-fit: cover; /* для збереження пропорцій при різних розмірах */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.catalog-item h3 {
+    margin-bottom: 10px;
+    color: #2980b9;
 }
 
 .catalog-item p {
-  margin: 4px 0;
-  font-size: 14px;
-  color: #333; /* додано темний колір для читабельності */
+    font-size: 0.95em;
+    margin-bottom: 10px;
 }
 
-/* Адаптивність для мобільних пристроїв */
-@media (max-width: 768px) {
-  .catalog-item {
-    width: calc(50% - 15px);
-  }
+.but-me {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-@media (max-width: 480px) {
-  .catalog-item {
-    width: 100%;
-  }
-}
-
-
-.but-me{
-  text-decoration: none;
-  margin-top: 10px;
-  padding: 5px;
-  color: white;
-  background-color: red;
-  border-radius: 30px;
-}
-
-.but-me:hover{
-  background-color: green;
-  
+.but-me:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
 }
 
 /* Відгуки */
 .section-feedback {
-  position: relative;
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 8px;
-  margin-top: 20px;
-  border-bottom: 3px dooted #550000;
+    background-color: #eaf2f8;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
-.feedback p {
-  margin: 8px 0;
-  font-style: italic;
+
+.feedback {
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    position: relative;
+}
+
+.feedback p:first-child {
+    font-weight: bold;
+}
+
+.feedback p:nth-child(2) {
+    margin-top: 8px;
 }
 
 /* Де нас знайти */
 .section-where {
-  margin-top: 15px;
-  text-align: center;
+    margin-bottom: 50px;
 }
+
 .address {
-  margin-top: 10px;
+    margin-bottom: 20px;
 }
+
 .address p {
-  margin: 6px 0;
+    font-size: 1.1em;
+    margin: 5px 0;
 }
-/* Фото карти або зображення */
+
+.contact {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
+/* Карта */
 .image-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.image-container img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Підвал (footer) */
+iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Футер */
 footer {
-  position: relative;
-  background-color: #999;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  margin-top: auto; /* додаємо для притягування footer до низу */
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-/* Стиль для кнопок у шапці із псевдоелементом :hover */
-.header-buttons button:hover {
-  background-color: #e2c6b0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transform: translateY(-2px);
+.footer-info {
+    max-width: 600px;
 }
 
-/* Стиль для кнопки "call-butt" при наведенні */
-.call-butt:hover {
-  background-color: #FFA07A; /* світло-оранжевий або інший колір для ефекту */
-  color: #FF9368;
-  border-color: #FF9368;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+#contacts {
+    font-size: 1.4em;
+    margin-bottom: 10px;
 }
 
-/* Стиль для кнопки "menu-butt" при наведенні */
-.menu-butt:hover {
-  background-color: #FF9368;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transform: scale(1.05);
-}
-
-/* Заголовки секцій (.section-catalog h2) при наведенні */
-h2:hover {
-  color: #FF6347; /* яскравий колір для виділення */
-  cursor: pointer;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-}
-
-/* Ефекти для кожного елемента каталогу */
-.catalog-item:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
-/* Кнопки або посилання під час наведення */
-.but-me:hover {
-  background-color: #28a745; /* зеленый для контрасту */
-  transition: background-color 0.3s ease;
-}
-
-/* Відгуки */
-.section-feedback:hover {
-  background-color: #ddd;
-  transition: background-color 0.3s ease;
-}
-
-/* Фото карти або зображення при наведенні */
-.image-container img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
+footer p {
+    margin: 5px 0;
 }
