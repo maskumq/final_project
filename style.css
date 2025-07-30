@@ -5,7 +5,6 @@ body {
   background: #f0f4f8;  /* Колір фону */
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Стиль для шапки (header) */
@@ -61,7 +60,7 @@ main {
   justify-content: center; /* по горизонталі */
   align-items: center;     /* по вертикалі */
   flex-wrap: wrap;         /* щоб елементи переносилися, якщо потрібно */
-  height: 528px;           /* висота секції */
+  height: 300px;           /* висота секції */
 }
 .info-div {
   flex: 1;                 /* займе половину разом з зображенням */
