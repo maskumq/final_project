@@ -3,15 +3,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f0f4f8;  /* Колір фону */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Стиль для шапки (header) */
 header {
   background-image:linear-gradient(rgba(241, 56, 56, 0.726), rgb(86, 210, 214));
- 
   width: 100%;
   border-bottom: 1px solid #ccc;
   padding: 10px;
