@@ -239,6 +239,7 @@ footer {
   padding: 10px;
   text-align: center;
   font-size: 14px;
+  margin-top: auto; /* додаємо для притягування footer до низу */
 }
 
 /* Стиль для кнопок у шапці із псевдоелементом :hover */
