@@ -3,6 +3,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f0f4f8;  /* Колір фону */
+  
+
 }
 
 /* Стиль для шапки (header) */
@@ -48,7 +50,6 @@ nav a:hover {
 /* Основний контент */
 main {
   position: relative;
-  flex: 1;
   padding: 20px;
 }
 
@@ -58,7 +59,6 @@ main {
   justify-content: center; /* по горизонталі */
   align-items: center;     /* по вертикалі */
   flex-wrap: wrap;         /* щоб елементи переносилися, якщо потрібно */
-  height: 528px;           /* висота секції */
 }
 .info-div {
   flex: 1;                 /* займе половину разом з зображенням */
